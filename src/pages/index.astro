@@ -1,24 +1,14 @@
 ---
-import { SITE_DESCRIPTION, SITE_TITLE } from "../../config";
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
+import PagesLayout from "../layouts/PagesLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body class="bg-sky-900 text-slate-200">
-    <div class="container mx-auto">
-      <Header />
-      <main class="mt-16">
-        <h4 class="text-teal-300 text-lg">Hi, My name is</h4>
-        <h2 class="text-5xl mt-5">Armindo Correia (agcpomps)</h2>
-        <p class="mt-5">
-          I'm a fulstack engineer (and data science ai aspirant). Currently
-          working in databases centric applications at GPIST
-        </p>
-      </main>
-    </div>
-  </body>
-</html>
+<PagesLayout>
+  <main class="mt-16">
+    <h4 class="text-teal-300 text-lg">Hi, My name is</h4>
+    <h2 class="text-5xl mt-5">Armindo Correia (agcpomps)</h2>
+    <p class="mt-5">
+      I'm a fulstack engineer (and data science ai aspirant). Currently working
+      in databases centric applications at GPIST
+    </p>
+  </main>
+</PagesLayout>

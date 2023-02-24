@@ -1,2 +1,19 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
+import Header from "../components/Header.astro";
+---
 
-
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="bg-sky-900 text-slate-200">
+    <div class="container mx-auto">
+      <Header />
+      <div class="container mx-auto max-w-sm">
+        <slot />
+      </div>
+    </div>
+  </body>
+</html>
