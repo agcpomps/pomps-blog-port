@@ -9,11 +9,9 @@ import Header from "../components/Header.astro";
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body class="bg-sky-900 text-slate-200">
-    <div class="container mx-auto">
+    <div class="custom-container mx-auto max-w-sm">
       <Header />
-      <div class="container mx-auto max-w-sm">
-        <slot />
-      </div>
+      <slot />
     </div>
   </body>
 </html>
