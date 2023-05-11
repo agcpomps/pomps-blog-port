@@ -4,11 +4,30 @@ import PagesLayout from "../layouts/PagesLayout.astro";
 
 <PagesLayout>
   <main class="mt-16">
-    <h4 class="text-teal-300 text-lg">Hi, My name is</h4>
-    <h2 class="text-5xl mt-4">Armindo Correia "agcpomps"</h2>
-    <p class="mt-4 max-w-sm">
-      I'm a fulstack engineer and data science ai aspirant. Currently working in
-      databases centric applications at GPIST
-    </p>
+    <div>
+      <h4 class="text-teal-300 text-lg font-semibold tracking-widest">
+        Hi, My name is
+      </h4>
+      <h2 class="text-6xl mt-4 font-bold text-slate-400">
+        Armindo Correia "agcpomps"
+      </h2>
+      <p class="mt-4 mb-8 max-w-sm">
+        I'm a fulstack engineer and data science ai aspirant. Currently working
+        in databases centric applications at GPIST
+      </p>
+
+      <a
+        href="/contact"
+        class="bg-teal-600 text-white font-semibold py-2 px-4 rounded"
+        >Give me a shot</a
+      >
+    </div>
   </main>
 </PagesLayout>
+
+<style>
+  main {
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+</style>
