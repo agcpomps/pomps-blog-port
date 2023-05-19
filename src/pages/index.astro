@@ -1,5 +1,7 @@
 ---
 import PagesLayout from "../layouts/PagesLayout.astro";
+import {getCollection} from "astro:content"
+const blogPosts = await getCollection("blog")
 ---
 
 <PagesLayout>
@@ -22,6 +24,16 @@ import PagesLayout from "../layouts/PagesLayout.astro";
         >Give me a shot</a
       >
     </div>
+    <section>
+      <h2>Latest posts</h2>
+      {
+        blogPosts.map(post => (
+          <h3>{post.data.title}</h3>
+          <p>{post.data.description}</p>
+          <a href={post.slug}>Read Post</a>
+        ))
+      }
+    </section>
   </main>
 </PagesLayout>
 
